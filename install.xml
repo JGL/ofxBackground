@@ -1,0 +1,30 @@
+<install>
+	<name>ofxBackground</name>
+	<version>0.03</version>
+	<author>joel gethin lewis</author>
+	<url>http://joelgethinlewis.com</url>
+	<requires>ofxOpenCV</requires>
+	
+	<add>
+		
+		<!-- 	=====================================================================	-->
+		<!--	========================== add per project using this addon =========	-->
+		<!-- 	=====================================================================	-->
+
+		<src>
+			<folder name="addons/ofxBackground/src">
+				<file>../../../addons/ofxBackground/src/ofxBackground.h</file>
+				<file>../../../addons/ofxBackground/src/ofxBackground.cpp</file>
+				<file>../../../addons/ofxBackground/src/ofxBackgroundCvColorImage.h</file>
+				<file>../../../addons/ofxBackground/src/ofxBackgroundCvColorImage.cpp</file>				
+				<file>../../../addons/ofxBackground/src/fromLearningOpenCV/ofxBackground.h</file>
+				<file>../../../addons/ofxBackground/src/fromLearningOpenCV/ofxBackground.cpp</file>
+			</folder>
+		</src>
+
+		<include>
+			<path>../../../addons/ofxBackground/src</path>
+		</include>
+	
+	</add>
+</install>
