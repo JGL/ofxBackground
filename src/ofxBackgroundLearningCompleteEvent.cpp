@@ -1,0 +1,3 @@
+#include "ofxBackgroundLearningCompleteEvent.h"
+
+ofEvent<ofxBackgroundLearningCompleteEvent> ofxBackgroundLearningCompleteEvent::events;

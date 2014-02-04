@@ -7,6 +7,8 @@
 
 #include "ofxBackground.h"
 
+ofxBackgroundLearningCompleteEvent ofxBackground::onLearningComplete;
+
 	//--------------------------------------------------------------------------------
 ofxBackground::ofxBackground() {
     _width = 0;
@@ -187,6 +189,8 @@ void ofxBackground::update(ofxCvColorImage& input){
 			if(!bStatsDone){
 					//do the stats, just the once
 				createModelsfromStats(); //create the background model
+                ofNotifyEvent(ofxBackgroundLearningCompleteEvent::events, onLearningComplete);
+                
 				bStatsDone = true;
 			}else {
 					//learn as normal, find the foreground if any
