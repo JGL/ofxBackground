@@ -42,6 +42,8 @@
 #include "ofxCvConstants.h"
 #include "ofxBackgroundCvColorImage.h"
 #include "ofxCvGrayScaleImage.h"
+#include "ofxBackgroundLearningCompleteEvent.h"
+#include <ofEvents.h>
 
 #include "cv_yuv_codebook.h"
 
@@ -109,6 +111,8 @@ public:
 	virtual void resetAnchor();
 	
 	virtual void startLearning(); //reset the timeStartedLearning float to start the learning process again
+    
+    static ofxBackgroundLearningCompleteEvent onLearningComplete;
 
 		//bits to make it easier to draw, and to get the information out - allocate first! 
 	ofxCvGrayscaleImage backgroundAverage;
